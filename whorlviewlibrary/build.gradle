@@ -7,7 +7,7 @@ version = PROJ_VERSION
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "23.0.0"
+    buildToolsVersion "23.0.3"
     resourcePrefix PROJ_RES_PREFIX
 
     defaultConfig {
