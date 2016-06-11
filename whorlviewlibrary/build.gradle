@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
 
 // This is the library version used when deploying the artifact
 version = PROJ_VERSION
@@ -23,7 +23,7 @@ android {
 def siteUrl = PROJ_SITE_URL      // Homepage URL of the library
 def gitUrl = PROJ_GIT_URL   // Git repository URL
 group = PROJ_GROUP                                   // Maven Group ID for the artifact
-
+/*
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -58,7 +58,7 @@ install {
             }
         }
     }
-}
+} */
 
 dependencies {
 }
@@ -88,7 +88,7 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-bintray {
+/*bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
 
@@ -101,4 +101,4 @@ bintray {
         licenses = ["Apache-2.0"]
         publish = true
     }
-}
+}*/
