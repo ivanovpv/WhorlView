@@ -3,4 +3,5 @@
     <color name="whorlview_material_red">#F44336</color>
     <color name="whorlview_material_green">#4CAF50</color>
     <color name="whorlview_material_blue">#5677fc</color>
+    <color name="whorlview_transparent">#00000000</color>
 </resources>

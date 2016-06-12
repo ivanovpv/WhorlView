@@ -1,0 +1,22 @@
+<!--
+  ~ Copyright (c) 2015.
+  ~ Authors: Pavel Ivanov (ivanovpv@gmail.com)
+  ~ Project: Cellbox Keeper
+  ~ Name: styles.xml
+  ~ Created: 24.08.15 10:25
+  ~
+  -->
+<resources>
+    <style name="whorlview_transparent_style">
+        <item name="android:bottomBright">@color/whorlview_transparent</item>
+        <item name="android:bottomDark">@color/whorlview_transparent</item>
+        <item name="android:bottomMedium">@color/whorlview_transparent</item>
+        <item name="android:centerBright">@color/whorlview_transparent</item>
+        <item name="android:centerDark">@color/whorlview_transparent</item>
+        <item name="android:centerMedium">@color/whorlview_transparent</item>
+        <item name="android:fullBright">@color/whorlview_transparent</item>
+        <item name="android:fullDark">@color/whorlview_transparent</item>
+        <item name="android:topBright">@color/whorlview_transparent</item>
+        <item name="android:topDark">@color/whorlview_transparent</item>
+    </style>
+</resources>

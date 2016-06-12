@@ -25,9 +25,9 @@ public class WhorlView extends View {
     public static final int MEDIUM = 0;
     public static final int SLOW = 2;
 
-    private static final int PARALLAX_FAST = 60;
-    private static final int PARALLAX_MEDIUM = 72;
-    private static final int PARALLAX_SLOW = 90;
+    public static final int PARALLAX_FAST = 60;
+    public static final int PARALLAX_MEDIUM = 72;
+    public static final int PARALLAX_SLOW = 90;
 
     private static final long REFRESH_DURATION = 16L;
 
@@ -88,9 +88,9 @@ public class WhorlView extends View {
     /**
      * string类型的颜色分割并转换为色值
      *
-     * @param colors
+     * @param colors String of colors
      */
-    private void parseStringToLayerColors(String colors) {
+    protected void parseStringToLayerColors(String colors) {
         String[] colorArray = colors.split(COLOR_SPLIT);
         mLayerColors = new int[colorArray.length];
         for (int i = 0; i < colorArray.length; i++) {
@@ -102,7 +102,17 @@ public class WhorlView extends View {
         }
     }
 
-    private void setParallax(int index) {
+    protected void setLayerColors(int... colors) {
+        mLayerColors=new int[colors.length];
+        for (int i = 0; i < colors.length; i++)
+                mLayerColors[i] = colors[i];
+    }
+
+    protected void setCircleSpeed(int circleSpeed) {
+        mCircleSpeed=circleSpeed;
+    }
+
+    protected void setParallax(int index) {
         switch (index) {
             case FAST:
                 mParallaxSpeed = PARALLAX_FAST;
@@ -242,10 +252,10 @@ public class WhorlView extends View {
     /**
      * 测量view的宽高
      *
-     * @param measureSpec
-     * @param wantSize
-     * @param minSize
-     * @return
+     * @param measureSpec int
+     * @param wantSize int
+     * @param minSize int
+     * @return int
      */
     public static int measureSize(int measureSpec, int wantSize, int minSize) {
         int result = 0;

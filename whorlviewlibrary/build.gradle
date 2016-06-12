@@ -6,6 +6,9 @@ apply plugin: 'com.android.library'
 version = PROJ_VERSION
 
 android {
+    lintOptions {
+        abortOnError false
+    }
     compileSdkVersion 22
     buildToolsVersion "23.0.3"
     resourcePrefix PROJ_RES_PREFIX
