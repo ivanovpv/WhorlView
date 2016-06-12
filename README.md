@@ -2,6 +2,8 @@
 
 Fork of Whorlview by Kyson (https://github.com/Kyson/WhorlView)
 
+![https://github.com/ivanovpv/WhorlView/blob/master/art/whorl_progress_showcase.gif](https://github.com/ivanovpv/WhorlView/blob/master/art/whorl_progress_showcase.gif)
+
 Adopted to `ProgressDialog` with spinner style (indeterminate length) - `STYLE_SPINNER`
 
 ## Usage:
